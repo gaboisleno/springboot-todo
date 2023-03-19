@@ -9,22 +9,18 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @RestController
 @RequestMapping("/api/task")
 public class TaskController {
 
+    private static final Logger log = LoggerFactory.getLogger(TaskController.class);
+    
     @Autowired
     private TaskService taskService;
-
-    public TaskController(){
-        
-    }
-
-    @GetMapping("/ping")
-    public String ping(){
-        return "200";
-    }
-
+    
     @GetMapping("/")
     public List<Task> getAll() {
         return taskService.getAll();

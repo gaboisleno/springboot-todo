@@ -12,7 +12,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.project.todolist.person.Person;
+import com.project.todolist.appUser.AppUser;
 import com.project.todolist.task.Task;
 
 import lombok.Data;
@@ -38,5 +38,5 @@ public class Collection {
     private List<Task> tasks;
 
     @ManyToOne
-    private Person user;
+    private AppUser user;
 }

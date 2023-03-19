@@ -1,4 +1,4 @@
-package com.project.todolist.person;
+package com.project.todolist.appUser;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,10 +11,10 @@ import javax.persistence.Table;
 
 import lombok.Data;
 
-@Entity(name = "Person")
+@Entity(name = "Appuser")
 @Table
 @Data
-public class Person {
+public class AppUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", updatable = false)
@@ -31,5 +31,5 @@ public class Person {
 
     @Column(name = "role")
     @Enumerated(EnumType.STRING)
-    private PersonRole role;
+    private AppUserRole role;
 }

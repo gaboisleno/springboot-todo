@@ -7,7 +7,7 @@
                         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
    <changeSet id="20230317-1" author="admin">
-      <createTable tableName="person">
+      <createTable tableName="appuser">
          
          <column name="id" type="bigint" autoIncrement="true">
             <constraints primaryKey="true" nullable="false" />

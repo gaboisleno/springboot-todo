@@ -1,9 +1,9 @@
-package com.project.todolist.person;
+package com.project.todolist.appUser;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PersonRepository extends JpaRepository<Person, Long> {
+public interface AppUserRepository extends JpaRepository<AppUser, Long> {
     
 }
