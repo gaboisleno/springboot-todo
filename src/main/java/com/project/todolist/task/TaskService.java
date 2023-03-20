@@ -13,8 +13,12 @@ public class TaskService {
     @Autowired
     private TaskRepository taskRepository;
 
-    public List<Task> getAll() {
+    public List<Task> findAll() {
         return taskRepository.findAll();
+    }
+
+    public void deleteById(Long id) {
+        taskRepository.deleteById(id);
     }
 
     public Task save(Task task) {
