@@ -28,8 +28,11 @@ public class Task {
     @Column(name = "description")
     private String description;
 
-    @Column(name = "done")
-    private Boolean done;
+    @Column(name = "completed")
+    private Boolean completed;
+    
+    @Column(name = "priority")
+    private Integer priority;
 
     @ManyToOne
     @JsonIgnoreProperties(value = "tasks", allowSetters = true)

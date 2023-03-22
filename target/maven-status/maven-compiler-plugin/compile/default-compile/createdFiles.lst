@@ -1,13 +1,17 @@
 com/project/todolist/task/TaskController.class
 com/project/todolist/task/TaskRepository.class
+com/project/todolist/appUser/AppUserDTOMapper.class
 com/project/todolist/collection/CollectionRepository.class
 com/project/todolist/collection/Collection.class
 com/project/todolist/appUser/AppUserRepository.class
 com/project/todolist/collection/CollectionService.class
+com/project/todolist/appUser/AppUserController.class
+com/project/todolist/HomeController.class
 com/project/todolist/task/TaskService.class
 com/project/todolist/TodolistApplication.class
 com/project/todolist/task/Task.class
 com/project/todolist/appUser/AppUserRole.class
+com/project/todolist/appUser/AppUserDTO.class
 com/project/todolist/appUser/AppUser.class
 com/project/todolist/appUser/AppUserService.class
 com/project/todolist/collection/CollectionController.class
